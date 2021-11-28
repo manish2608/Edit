@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .main {
+            margin-top: 40vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .center-div {
+            top: 50%;
+            height: 100px;
+            width: 50%;
+            background-color: rgb(206, 204, 197);
+            display: flex;
+            padding: auto;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px black;
+        }
+        
+        input {
+            margin: 10px;
+        }
+        
+        .new-div {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            border: 2px solid blanchedalmond;
+            box-shadow: 0 0 10px black;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="center-div">
+            Enter here :<input name="Input" type="text">
+            <button onclick="newElement()">Click here for new elements</button><br>
+
+        </div>
+        <div class="new-div"></div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
